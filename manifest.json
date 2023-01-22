@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "JVC PaBan",
+    "version": "1.0",
+    "description": "Affiche 10 de vos pseudos non banni.",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "https://www.jeuxvideo.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "popup.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "icon128.png"
+    }
+}

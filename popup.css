@@ -1,0 +1,40 @@
+body {
+    background-color: #1c1c1c;
+    /* dark gray */
+    color: #f0f0f0;
+    /* light gray */
+}
+
+#nickname-input {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+#submit-button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #8f8f8f;
+    color: white;
+    border: none;
+    border-radius: 9%;
+    /* this will make the button round */
+    width: 54px;
+    height: 27px;
+    cursor: pointer;
+    float: right;
+    /* this will float the button to the right */
+    margin-left: 10px;
+    /* this will add a margin of 10px to the right of the button */
+}
+
+
+#submit-button:hover {
+    background-color: #756f6e;
+}
+
+#scraped-content {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
