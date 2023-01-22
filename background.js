@@ -1,3 +1,6 @@
+const axios = require('axios');
+const cheerio = require('cheerio');
+
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         if (request.type === "scrape") {
@@ -6,9 +9,6 @@ chrome.runtime.onMessage.addListener(
         }
     }
 );
-
-const axios = require('axios');
-const cheerio = require('cheerio');
 
 async function getScrapedData(callback) {
     try {
